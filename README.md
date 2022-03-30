@@ -1,4 +1,4 @@
-### Hi there 👋, I'm ```Lina Kazakova```
+### Hi there 👋, I'm ```Lina```
 
 ###### `Frontend Developer`
 
