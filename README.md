@@ -7,7 +7,6 @@
 - Bootstrap
 - Git
 - JavaScript
-- Vue
 - React
 - Vue
 - MaterialUI
