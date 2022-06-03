@@ -81,6 +81,7 @@ Promise.all([user, day])
     let img = new Image();
     img.src = json.avatar_url;
     userTitle.append(img);
+    img.classList.add('avatar');
     img.style = 'width:200px; heigth:200px; cursor: pointer';
     img.addEventListener('click', () => window.location = json.html_url)
 
