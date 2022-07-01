@@ -1,3 +1,15 @@
+:root {
+  --color-white: #fff;
+  --color-light-gray: #e8e8e8;
+  --color-gray: #303134;
+  --color-orange: #f3ab00;
+  --color-darkTeal: #21495e;
+  --color-dark: #111;
+
+  --font-size-normal: 14px;
+  --font-size-medium: 18px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,14 +20,14 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  color: #303134;
-  background-color: #fff;
+  font-size: var(--font-size-medium);
+  color: var(--color-gray);
+  background-color: var(--color-white);
 }
 
 a {
   text-decoration: none;
-  color: #303134;
+  color: currentColor;
 }
 
 button {
@@ -24,14 +36,14 @@ button {
 }
 
 a:hover:not(:focus-visible) {
-  color: #f3ab00;
+  color: var(--color-orange);
   text-shadow: none;
   transition: all 1s ease-in-out;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 1ps solid #f3ab00;
+  outline: 1px solid var(--color-orange);
   outline-offset: 3px;
 }
 
@@ -92,7 +104,7 @@ button:focus-visible {
   margin: 0;
   line-height: 50px;
   letter-spacing: 0.2em;
-  color: #f3ab00;
+  color: var(--color-orange);
 }
 
 .title__profession {
@@ -117,12 +129,14 @@ button:focus-visible {
   display: block;
   content: "";
   height: 1.5px;
-  background-color: #f3ab00;
+  background-color: var(--color-orange);
   top: 15px;
 }
 
-.skills__list {
+.skills,
+.contacts {
   max-width: 90%;
+  margin: 0 auto;
 }
 
 .skills__list_item {
@@ -135,6 +149,10 @@ button:focus-visible {
   margin-bottom: 8px;
 }
 
+.skills__list_item > *:not(:last-child) {
+  margin-right: 5px;
+}
+
 .skills__list_item img {
   width: 2vw;
 }
@@ -143,15 +161,15 @@ button:focus-visible {
   width: 50%;
   display: flex;
   justify-content: space-between;
-  background-color: #e8e8e8;
+  background-color: var(--color-light-gray);
 }
 
 .skills-level__level {
   padding: 3px 0;
   font-size: 14px;
   text-align: center;
-  color: #ffffff;
-  background-color: #21495e;
+  color: var(--color-white);
+  background-color: var(--color-darkTeal);
 }
 
 .contacts-list__item:not(:last-child) {
@@ -166,11 +184,6 @@ button:focus-visible {
   margin-right: 10px;
 }
 
-.connect {
-  display: flex;
-  justify-content: center;
-}
-
 .fa-github-alt:before,
 .fa-telegram-plane:before,
 .fa-linkedin-in:before {
@@ -178,7 +191,7 @@ button:focus-visible {
 }
 
 .right-section {
-  color: #fff;
+  color: var(--color-white);
   background: no-repeat 100% 0%/ 102% url(../assets/img/header_back.jpg);
 }
 
@@ -204,12 +217,12 @@ button:focus-visible {
 
 .goal__title,
 .goal__text {
-  color: #111;
-  font-weight: bold;
+  color: var(--color-dark);
 }
 
 .goal__text {
   margin: 0;
+  line-height: 1.5em;
 }
 
 .about-text__paragraph {
@@ -235,12 +248,8 @@ button:focus-visible {
   left: 0px;
   width: 8px;
   height: 8px;
-  background: #f3ab00;
+  background: var(--color-orange);
   border-radius: 50%;
-}
-
-.projects {
-  margin-bottom: 30px;
 }
 
 .projects__text {
@@ -276,7 +285,7 @@ button:focus-visible {
   margin: 0;
   opacity: 0;
   font-size: 1.2em;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .slide.active {
@@ -290,7 +299,7 @@ button:focus-visible {
 
 .lang,
 .hobbies {
-  color: #303134;
+  color: var(--color-gray);
 }
 
 /*! FOOTER */
@@ -320,23 +329,23 @@ button:focus-visible {
   bottom: 80px;
   right: 20px;
   padding: 10px;
-  background-color: #21495e;
-  border: 1px solid #fff;
+  background-color: var(--color-darkTeal);
+  border: 1px solid var(--color-white);
   border-radius: 2px;
-  color: #fff;
+  color: var(--color-white);
   z-index: 100;
   cursor: pointer;
 }
 
 .btn-up:hover:not(:focus-visible) {
-  border-color: #f3ab00;
+  border-color: var(--color-orange);
 }
 
 /*! MEDIA-QUERRIES*/
 @media (max-width: 1148px) {
   .right-section {
-    color: #fff;
-    background: #fff;
+    color: var(--color-white);
+    background: var(--color-white);
   }
 
   .gradient {
@@ -370,6 +379,7 @@ button:focus-visible {
   }
 
   .project-img {
+    margin-bottom: 5px;
     width: 250px;
     height: 150px;
     background: 50% 50%/80% no-repeat;
@@ -382,13 +392,14 @@ button:focus-visible {
   }
 
   .project__title {
+    margin: 0;
     margin-bottom: 5px;
     text-align: center;
   }
 
   .project span {
-    color: #f3ab00;
-    border: 1px solid #303134;
+    color: var(--color-orange);
+    border: 1px solid var(--color-gray);
     border-radius: 10px;
     padding: 2px 5px;
     font-size: 12px;
@@ -396,19 +407,17 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --font-size-medium: 14px;
+  }
+
   .main {
     flex-direction: column;
   }
 
   .left-section {
-    margin: 0 45px;
+    margin-right: 10px;
     border-right: none;
-  }
-
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .right-section {
@@ -430,16 +439,37 @@ button:focus-visible {
 }
 
 @media (max-width: 547px) {
-  .contact-links {
-    justify-content: space-around;
+  :root {
+    --font-size-medium: 12px;
   }
 
-  .connect {
+  .main-container {
     flex-direction: column;
+  }
+
+  .title {
+    padding: 30px 0 10px;
+  }
+
+  .title__name,
+  .title__profession {
+    line-height: 35px;
   }
 
   .right-section {
     background: none;
+  }
+
+  .gradient {
+    padding: 10px 30px 0;
+  }
+
+  .skills__list_item img {
+    width: 4vw;
+  }
+
+  .footer {
+    padding: 25px 0;
   }
 }
 
@@ -462,15 +492,6 @@ button:focus-visible {
 
   .skills__list_item img {
     width: 7vw;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    margin-bottom: 25px;
-  }
-
-  .connect {
-    flex-direction: row;
   }
 
   .gradient {

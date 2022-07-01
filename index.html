@@ -33,7 +33,7 @@
       <a class="btn-up" href="#" onclick="smoothJumpUp(); return false;">up▲</a>
     </div>
     <main class="main">
-      <div class="container flex">
+      <div class="container main-container flex">
         <div class="left-section">
           <section class="title">
             <h1 class="visually-hidden">Lina Kazakova</h1>
@@ -163,22 +163,18 @@
           </section>
           <section class="contacts section" id="contacts">
             <h2 class="contacts__title section-title">Contacts</h2>
-            <div class="contact-links">
-              <ul class="contacts-list section-list list-reset">
-                <li class="contacts-list__item">
-                  Location:&nbsp;<b>Tomsk, Russia</b>
-                </li>
-                <li class="contacts-list__item flex">
-                  Phone:&nbsp;
-                  <a class="contacts__list_link" href="tel:+79528905500"
-                    ><b>+79528905500</b></a
-                  >
-                  <a class="contacts__list_link" href="https://t.me/ellie_Ooo"
-                    ><i class="fab fa-telegram-plane"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+            <ul class="contacts-list section-list list-reset">
+              <li class="contacts-list__item">
+                <span>Location:&nbsp;<b>Tomsk, Russia</b></span>
+              </li>
+              <li class="contacts-list__item flex">
+                <a class="contacts__list_link" href="tel:+79528905500">
+                  <span>Ph:&nbsp;<b>+79528905500</b></span>
+                <a class="contacts__list_link" href="https://t.me/ellie_Ooo"
+                  ><i class="fab fa-telegram-plane"></i
+                ></a>
+              </li>
+            </ul>
           </section>
         </div>
         <div class="right-section">
@@ -251,9 +247,9 @@
                   style="background-image: url(assets/img/portfolio.png)"
                 >
                   <a href="https://ellieollie.github.io/App.creation/">
-                    <h4 class="slide__title">
+                    <h3 class="slide__title">
                       Portfolio landing-page (html, css, JS)
-                    </h4>
+                    </h3>
                   </a>
                 </li>
                 <li
@@ -261,7 +257,7 @@
                   style="background-image: url(assets/img/memory-game.png)"
                 >
                   <a href="https://ellieollie.github.io/Memory-game/">
-                    <h4 class="slide__title">Memory game (JS)</h4>
+                    <h3 class="slide__title">Memory game (JS)</h3>
                   </a>
                 </li>
                 <li
@@ -269,7 +265,7 @@
                   style="background-image: url(assets/img/buggame.jpg)"
                 >
                   <a href="https://ellieollie.github.io/Find_the_bug/">
-                    <h4 class="slide__title">"Find the bug" game (JS)</h4>
+                    <h3 class="slide__title">"Find the bug" game (JS)</h3>
                   </a>
                 </li>
                 <li
@@ -277,9 +273,9 @@
                   style="background-image: url(assets/img/todo.jpg)"
                 >
                   <a href="https://ellieollie.github.io/To-do/">
-                    <h4 class="slide__title">
+                    <h3 class="slide__title">
                       "To-do list" application (react)
-                    </h4>
+                    </h3>
                   </a>
                 </li>
                 <li
@@ -287,7 +283,7 @@
                   style="background-image: url(assets/img/weather.png)"
                 >
                   <a href="https://ellieollie.github.io/Weather_app/">
-                    <h4 class="slide__title">"Weather & Unsplash" app (Vue)</h4>
+                    <h3 class="slide__title">"Weather & Unsplash" app (Vue)</h3>
                   </a>
                 </li>
               </ul>
@@ -308,7 +304,7 @@
                       class="project-img"
                       style="background-image: url(assets/img/memory-game.png)"
                     ></div>
-                    <h4 class="project__title">Memory game</h4>
+                    <h3 class="project__title">Memory game</h3>
                     <span>Java Script</span>
                   </a>
                 </li>
@@ -318,7 +314,7 @@
                       class="project-img"
                       style="background-image: url(assets/img/buggame.jpg)"
                     ></div>
-                    <h4 class="project__title">"Find the bug" game</h4>
+                    <h3 class="project__title">"Find the bug" game</h3>
                     <span>HTML, CSS, Java Script</span>
                   </a>
                 </li>
@@ -328,7 +324,7 @@
                       class="project-img"
                       style="background-image: url(assets/img/todo.jpg)"
                     ></div>
-                    <h4 class="project__title">"To-do list" application</h4>
+                    <h3 class="project__title">"To-do list" application</h3>
                     <span>React, MUI</span>
                   </a>
                 </li>
@@ -338,7 +334,7 @@
                       class="project-img"
                       style="background-image: url(assets/img/weather.png)"
                     ></div>
-                    <h4 class="project__title">"Weather & Unsplash" app</h4>
+                    <h3 class="project__title">"Weather & Unsplash" app</h3>
                     <span>Vue (test-task)</span>
                   </a>
                 </li>
