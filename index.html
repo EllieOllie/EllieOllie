@@ -1,327 +1,401 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="CV" content="CV app" />
-  <title>Lina Kazakova</title>
-  <base target="_blank">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon">
-  <meta property="og:title" content="Lina Kazakova">
-  <meta property="og:description" content="My resume">
-  <meta property="og:url" content="https://ellieollie.github.io/EllieOllie/">
-  <meta property="og:image" content="https://github.com/EllieOllie/rsschool-cv/blob/rsschool-cv-html/img/photo.png?raw=true">
-  <meta property="og:image:width" content="630">
-  <meta property="og:image:height" content="630">
-</head>
-<body>
-  <div id="upbutton" class="upbutton">
-    <a class="btn-up" href="#" onclick="smoothJumpUp(); return false;">up▲</a>
-  </div>
-  <div class="wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="CV" content="CV app" />
+    <title>Lina Kazakova</title>
+    <base target="_blank" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/ico/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta property="og:title" content="Lina Kazakova" />
+    <meta property="og:description" content="My resume" />
+    <meta
+      property="og:url"
+      content="https://ellieollie.github.io/EllieOllie/"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/EllieOllie/rsschool-cv/blob/rsschool-cv-html/img/photo.png?raw=true"
+    />
+    <meta property="og:image:width" content="630" />
+    <meta property="og:image:height" content="630" />
+  </head>
+  <body>
+    <div id="upbutton" class="upbutton">
+      <a class="btn-up" href="#" onclick="smoothJumpUp(); return false;">up▲</a>
+    </div>
     <main class="main">
-      <div class="left-section">
-        <section class="title">
-          <!-- <img src="assets/img/avatar.jpg" alt="LinaKazakova" width="200" height="200">
-          <h1 class="title__name">Lina Kazakova</h1>
-          <h3 class="title__profession">Frontend-developer junior</h3> -->
-        </section>
-        <section class="skills section" id="skills">
-          <h2 class="skills__title section-title">Skills</h2>
-          <ul class="skills__list section-list list-reset">
-            <li class="skills__list_item">
-              <img alt="HTML5" width="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />&nbsp;
-              HTML5
-              <div class="skills-level html">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle">
-                  <div class="half-circle"></div>
-                </div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img alt="CSS3" width="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />&nbsp;
-              CSS3
-              <div class="skills-level css">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img alt="Git" width="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />&nbsp;
-              Git
-              <div class="skills-level git">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img alt="JavaScript" width="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />&nbsp;
-              JavaScript
-              <div class="skills-level js">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle">
-                  <div class="half-circle"></div>
-                </div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img alt="React" width="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />&nbsp;
-              React
-              <div class="skills-level react">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle">
-                  <div class="half-circle"></div>
-                </div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img alt="Vue" width="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" />&nbsp;
-              Vue
-              <div class="skills-level vue">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle">
-                  <div class="half-circle"></div>
-                </div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img alt="Bootstrap" width="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" />&nbsp;
-              Bootstrap
-              <div class="skills-level bootstrap">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img alt="MaterialUI" width="26" src="https://img.icons8.com/color/48/000000/material-ui.png" />&nbsp;
-              MaterialUI
-              <div class="skills-level mui">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img src="https://img.icons8.com/color/48/000000/figma--v1.png" alt="figma"/>&nbsp;
-              Figma
-              <div class="skills-level figma">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle">
-                  <div class="half-circle"></div>
-                </div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img src="https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png" alt="photoshop"/>&nbsp;
-              Photoshop
-              <div class="skills-level photoshop">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img src="https://img.icons8.com/color/48/000000/adobe-illustrator--v1.png" alt="illustrator"/>&nbsp;
-              Illustrator
-              <div class="skills-level illustrator">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle">
-                  <div class="half-circle"></div>
-                </div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-            <li class="skills__list_item">
-              <img src="https://img.icons8.com/external-filled-outline-icons-pause-08/50/000000/external-magic-party2-filled-outline-icons-pause-08.png" alt="magic"/>&nbsp;
-              Magic
-              <div class="skills-level magic">
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-                <div class="empty-circle"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="contacts section" id="contacts">
-          <h2 class="contacts__title section-title">Contacts</h2>
-          <div class="contact-links">
-            <ul class="contacts-list section-list list-reset">
-              <li class="contacts-list__item">Location:&nbsp;<b>Tomsk, Russia</b></li>
-              <li class="contacts-list__item">Phone:&nbsp;<a href="tel:+79528905500"><b>+79528905500</b></a></li>
-              <!-- <li>E-mail:&nbsp;<b>ryuminaen@gmail.com</b></li> -->
-            </ul>
-            <ul class="connect list-reset">
-              <!-- <li class="connect-item">
-                <a href="https://github.com/EllieOllie"><i class="fab fa-github-alt"></i></a>
-              </li> -->
-              <li class="connect-item">
-                <a href="https://t.me/ellie_Ooo"><i class="fab fa-telegram-plane"></i></a>
-              </li>
-              <!-- <li class="connect-item">
-                <a href="https://www.linkedin.com/in/elina-kazakova-7b8434a3/"><i class="fab fa-linkedin-in"></i></a>
-              </li> -->
-            </ul>
-          </div>
-        </section>
-      </div>
-      <div class="right-section">
-        <div class="gradient">
-          <section class="goal section">
-            <h2 class="goal__title section-title">&lt;CAREER GOAL&gt;</h2>
-            <p class="goal__text">To get and improve knowledge in frontend development and get offer to work</p>
+      <div class="container flex">
+        <div class="left-section">
+          <section class="title">
+            <h1 class="visually-hidden">Lina Kazakova</h1>
           </section>
-          <section class="about section" id="about">
-            <h2 class="about__title section-title">About me</h2>
-            <div class="about-text">
-              <p class="about-text__paragraph">I have no production experience as a frontend developer, but I want to devote my time to web development.</p>
-              <p class="about-text__paragraph">I <b>have the abilities</b> that will come useful in any job. My previous work (as a leading geologist) consisted of making projects and reports, <b>creating</b> graphic material, <b>communicating</b> with the customers.</p>
-              <p class="about-text__paragraph">For many years I have been fond of photography and drawing - hence my knowledge of graphic editors. <b>I love to create beautiful!</b>.</p>
-              <p class="about-text__paragraph">Without any knowledge in web development, <b>I mastered</b> the basics of html, css, JS and React during 7 months in 2021. <b>I have done 4 projects</b> and now I am working on another two using the java script and react.</p>
-              <p class="about-text__paragraph">I have the skills of <b>self-study</b>, <b>perseverance</b>, quick search for information and errors, I like to <b>analyze data and solve</b> unusual tasks.</p>
+          <section class="skills section" id="skills">
+            <h2 class="skills__title section-title">Skills</h2>
+            <ul class="skills__list section-list list-reset">
+              <li class="skills__list_item">
+                <img
+                  alt="HTML5"
+                  width="26"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
+                />
+                <span>HTML5</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 90%">90%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  alt="CSS3"
+                  width="26"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
+                />
+                <span>CSS3</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 90%">90%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  alt="Git"
+                  width="26"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+                />
+                <span>Git</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 90%">90%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  alt="JavaScript"
+                  width="26"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                />
+                <span>JavaScript</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 75%">75%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  alt="React"
+                  width="26"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                />
+                <span>React</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 50%">50%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  alt="Vue"
+                  width="26"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
+                />
+                <span>Vue</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 60%">60%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  alt="Bootstrap"
+                  width="26"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png"
+                />
+                <span>Bootstrap</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 60%">60%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  alt="MaterialUI"
+                  width="26"
+                  src="https://img.icons8.com/color/48/000000/material-ui.png"
+                />
+                <span>MaterialUI</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 70%">70%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  src="https://img.icons8.com/color/48/000000/figma--v1.png"
+                  alt="figma"
+                />
+                <span>Figma</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 80%">80%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  src="https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png"
+                  alt="photoshop"
+                />
+                <span>Photoshop</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 40%">40%</div>
+                </div>
+              </li>
+              <li class="skills__list_item">
+                <img
+                  src="https://img.icons8.com/color/48/000000/adobe-illustrator--v1.png"
+                  alt="illustrator"
+                />
+                <span>Illustrator</span>
+                <div class="skills-level html">
+                  <div class="skills-level__level" style="width: 70%">70%</div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="contacts section" id="contacts">
+            <h2 class="contacts__title section-title">Contacts</h2>
+            <div class="contact-links">
+              <ul class="contacts-list section-list list-reset">
+                <li class="contacts-list__item">
+                  Location:&nbsp;<b>Tomsk, Russia</b>
+                </li>
+                <li class="contacts-list__item flex">
+                  Phone:&nbsp;
+                  <a class="contacts__list_link" href="tel:+79528905500"
+                    ><b>+79528905500</b></a
+                  >
+                  <a class="contacts__list_link" href="https://t.me/ellie_Ooo"
+                    ><i class="fab fa-telegram-plane"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </section>
-          <section class="education section" id="education">
-            <h2 class="education__title section-title">Education & courses (IT only)</h2>
-            <ul class="education__list section-list list-reset">
-              <li class="education__list_item list-indent"><b>2021-2022</b> - Self-education (html, css, js, react, vue, bootstrap, git)</li>
-              <li class="education__list_item list-indent"><b>2021</b> - Web Hero School - Frontend Developer junior (html, css, js, react)</li>
-              <li class="education__list_item list-indent"><b>2021-2022</b> - RS School Stage 0 - Frontend Developer junior (html, css, js basics)</li>
-            </ul>
-          </section>
-          <section class="projects section" id="projects">
-            <h2 class="projects__title section-title">Pet-projects:</h2>
-            <p class="projects__text">All my projects are adapted for mobile devices.</p>
-            <ul class="container-projects-slide list-reset">
-              <li class="slide" style="background-image: url(assets/img/portfolio.png);">
+        </div>
+        <div class="right-section">
+          <div class="gradient">
+            <section class="goal section">
+              <h2 class="goal__title section-title">&lt;CAREER GOAL&gt;</h2>
+              <p class="goal__text">
+                To get and improve knowledge in frontend development and get
+                offer to work
+              </p>
+            </section>
+            <section class="about section" id="about">
+              <h2 class="about__title section-title">About me</h2>
+              <div class="about-text">
+                <p class="about-text__paragraph">
+                  I have no production experience as a frontend developer, but I
+                  want to devote my time to web development.
+                </p>
+                <p class="about-text__paragraph">
+                  I <b>have the abilities</b> that will come useful in any job.
+                  My previous work (as a leading geologist) consisted of making
+                  projects and reports, <b>creating</b> graphic material,
+                  <b>communicating</b> with the customers.
+                </p>
+                <p class="about-text__paragraph">
+                  For many years I have been fond of photography and drawing -
+                  hence my knowledge of graphic editors.
+                  <b>I love to create beautiful!</b>.
+                </p>
+                <p class="about-text__paragraph">
+                  Without any knowledge in web development,
+                  <b>I mastered</b> the basics of html, css, JS and React during
+                  7 months in 2021. <b>I have done 4 projects</b> and now I am
+                  working on another two using the java script and react.
+                </p>
+                <p class="about-text__paragraph">
+                  I have the skills of <b>self-study</b>, <b>perseverance</b>,
+                  quick search for information and errors, I like to
+                  <b>analyze data and solve</b> unusual tasks.
+                </p>
+              </div>
+            </section>
+            <section class="education section" id="education">
+              <h2 class="education__title section-title">
+                Education & courses (IT only)
+              </h2>
+              <ul class="education__list section-list list-reset">
+                <li class="education__list_item list-indent">
+                  <b>2021-2022</b> - Self-education (html, css, js, react, vue,
+                  bootstrap, git)
+                </li>
+                <li class="education__list_item list-indent">
+                  <b>2021</b> - Web Hero School - Frontend Developer junior
+                  (html, css, js, react)
+                </li>
+                <li class="education__list_item list-indent">
+                  <b>2021-2022</b> - RS School Stage 0 - Frontend Developer
+                  junior (html, css, js basics)
+                </li>
+              </ul>
+            </section>
+            <section class="projects section" id="projects">
+              <h2 class="projects__title section-title">Pet-projects:</h2>
+              <p class="projects__text">
+                All my projects are adapted for mobile devices.
+              </p>
+              <ul class="container-projects-slide list-reset">
+                <li
+                  class="slide"
+                  style="background-image: url(assets/img/portfolio.png)"
+                >
                   <a href="https://ellieollie.github.io/App.creation/">
-                    <h4 class="slide__title">Portfolio landing-page (html, css, JS)</h4>
+                    <h4 class="slide__title">
+                      Portfolio landing-page (html, css, JS)
+                    </h4>
                   </a>
-              </li>
-              <li class="slide" style="background-image: url(assets/img/memory-game.png);">
-                <a href="https://ellieollie.github.io/Memory-game/">
-                  <h4 class="slide__title">Memory game (JS)</h4>
-                </a>
-              </li>
-              <li class="slide" style="background-image: url(assets/img/buggame.jpg);">
-                <a href="https://ellieollie.github.io/Find_the_bug/">
-                  <h4 class="slide__title">"Find the bug" game (JS)</h4>
-                </a>
-              </li>
-              <li class="slide active" style="background-image: url(assets/img/todo.jpg);">
-                <a href="https://ellieollie.github.io/To-do/">
-                  <h4 class="slide__title">"To-do list" application (react)</h4>
-                </a>
-              </li>
-              <li class="slide" style="background-image: url(assets/img/weather.png);">
-                <a href="https://ellieollie.github.io/Weather_app/">
-                  <h4 class="slide__title">"Weather & Unsplash" app (Vue)</h4>
-                </a>
-              </li>
-            </ul>
-            <ul class="container-projects">
-              <li class="project">
+                </li>
+                <li
+                  class="slide"
+                  style="background-image: url(assets/img/memory-game.png)"
+                >
+                  <a href="https://ellieollie.github.io/Memory-game/">
+                    <h4 class="slide__title">Memory game (JS)</h4>
+                  </a>
+                </li>
+                <li
+                  class="slide"
+                  style="background-image: url(assets/img/buggame.jpg)"
+                >
+                  <a href="https://ellieollie.github.io/Find_the_bug/">
+                    <h4 class="slide__title">"Find the bug" game (JS)</h4>
+                  </a>
+                </li>
+                <li
+                  class="slide active"
+                  style="background-image: url(assets/img/todo.jpg)"
+                >
+                  <a href="https://ellieollie.github.io/To-do/">
+                    <h4 class="slide__title">
+                      "To-do list" application (react)
+                    </h4>
+                  </a>
+                </li>
+                <li
+                  class="slide"
+                  style="background-image: url(assets/img/weather.png)"
+                >
+                  <a href="https://ellieollie.github.io/Weather_app/">
+                    <h4 class="slide__title">"Weather & Unsplash" app (Vue)</h4>
+                  </a>
+                </li>
+              </ul>
+              <ul class="container-projects">
+                <li class="project">
                   <a href="https://ellieollie.github.io/Portfolio/portfolio/">
-                    <div class="project-img" style="background-image: url(assets/img/portfolio.png);"></div>
-                    <h4 class="project__title">Portfolio landing-page</h4><span>HTML, CSS, JS</span>
+                    <div
+                      class="project-img"
+                      style="background-image: url(assets/img/portfolio.png)"
+                    ></div>
+                    <h4 class="project__title">Portfolio landing-page</h4>
+                    <span>HTML, CSS, JS</span>
                   </a>
-              </li>
-              <li class="project">
-                <a href="https://ellieollie.github.io/Memory-game/">
-                  <div class="project-img" style="background-image: url(assets/img/memory-game.png);"></div>
-                  <h4 class="project__title">Memory game</h4><span>Java Script</span>
-                </a>
-              </li>
-              <li class="project">
-                <a href="https://ellieollie.github.io/Find_the_bug/">
-                  <div class="project-img" style="background-image: url(assets/img/buggame.jpg);"></div>
-                  <h4 class="project__title">"Find the bug" game</h4><span>HTML, CSS, Java Script</span>
-                </a>
-              </li>
-              <li class="project">
-                <a href="https://ellieollie.github.io/To-do/">
-                  <div class="project-img" style="background-image: url(assets/img/todo.jpg);"></div>
-                  <h4 class="project__title">"To-do list" application</h4><span>React, MUI</span>
-                </a>
-              </li>
-              <li class="project">
-                <a href="https://ellieollie.github.io/Weather_app/">
-                  <div class="project-img" style="background-image: url(assets/img/weather.png);"></div>
-                  <h4 class="project__title">"Weather & Unsplash" app</h4><span>Vue (test-task)</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <section class="lang section" id="lang">
-            <h2 class="lang__title section-title">Languages</h2>
-            <ul class="lang__list section-list list-reset">
-              <li class="lang__list_item list-indent"><b>Russian</b> - native</li>
-              <li class="lang__list_item list-indent"><b>English</b> - A2 &#8594; B1 (in progress)</li>
-            </ul>
-          </section>
-          <section class="hobbies section" id="hobbies">
-            <h2 class="hobbies__title section-title">Hobbies</h2>
-            <ul class="hobbies__list section-list list-reset">
-              <li class="hobbies__list_item list-indent">Spare my time active (snowboarding, skies, mountain bike, hiking and walking outdoor).</li>
-              <li class="hobbies__list_item list-indent">Keen on photography. I spent a lot of time to study of photography.</li>
-              <li class="hobbies__list_item list-indent">Enjoy reading nonfiction literature.</li>
-              <li class="hobbies__list_item list-indent">Really into html/css coding by perfect pixel and solving codewars katas.</li>
-              <li class="hobbies__list_item list-indent">Addicted to yoga.</li>
-              <li class="hobbies__list_item list-indent">Like to bake goodies.</li>
-            </ul>
-          </section>
+                </li>
+                <li class="project">
+                  <a href="https://ellieollie.github.io/Memory-game/">
+                    <div
+                      class="project-img"
+                      style="background-image: url(assets/img/memory-game.png)"
+                    ></div>
+                    <h4 class="project__title">Memory game</h4>
+                    <span>Java Script</span>
+                  </a>
+                </li>
+                <li class="project">
+                  <a href="https://ellieollie.github.io/Find_the_bug/">
+                    <div
+                      class="project-img"
+                      style="background-image: url(assets/img/buggame.jpg)"
+                    ></div>
+                    <h4 class="project__title">"Find the bug" game</h4>
+                    <span>HTML, CSS, Java Script</span>
+                  </a>
+                </li>
+                <li class="project">
+                  <a href="https://ellieollie.github.io/To-do/">
+                    <div
+                      class="project-img"
+                      style="background-image: url(assets/img/todo.jpg)"
+                    ></div>
+                    <h4 class="project__title">"To-do list" application</h4>
+                    <span>React, MUI</span>
+                  </a>
+                </li>
+                <li class="project">
+                  <a href="https://ellieollie.github.io/Weather_app/">
+                    <div
+                      class="project-img"
+                      style="background-image: url(assets/img/weather.png)"
+                    ></div>
+                    <h4 class="project__title">"Weather & Unsplash" app</h4>
+                    <span>Vue (test-task)</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="lang section" id="lang">
+              <h2 class="lang__title section-title">Languages</h2>
+              <ul class="lang__list section-list list-reset">
+                <li class="lang__list_item list-indent">
+                  <b>Russian</b> - native
+                </li>
+                <li class="lang__list_item list-indent">
+                  <b>English</b> - A2 &#8594; B1 (in progress)
+                </li>
+              </ul>
+            </section>
+            <section class="hobbies section" id="hobbies">
+              <h2 class="hobbies__title section-title">Hobbies</h2>
+              <ul class="hobbies__list section-list list-reset">
+                <li class="hobbies__list_item list-indent">
+                  Spare my time active (snowboarding, skies, mountain bike,
+                  hiking and walking outdoor).
+                </li>
+                <li class="hobbies__list_item list-indent">
+                  Keen on photography. I spent a lot of time to study of
+                  photography.
+                </li>
+                <li class="hobbies__list_item list-indent">
+                  Enjoy reading nonfiction literature.
+                </li>
+                <li class="hobbies__list_item list-indent">
+                  Really into html/css coding by perfect pixel and solving
+                  codewars katas.
+                </li>
+                <li class="hobbies__list_item list-indent">
+                  Addicted to yoga.
+                </li>
+                <li class="hobbies__list_item list-indent">
+                  Like to bake goodies.
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="footer-container">
-        <!-- <a class="footer-link" href="https://rs.school/js/">
-          <img src="assets/svg/rs_school_js.svg" alt="rss" width="100">
-        </a> -->
-        <a class="footer-link" href="https://github.com/EllieOllie">©&nbsp;ElliOllie&nbsp;2022</a>
+      <div class="container footer-container">
+        <a class="footer-link" href="https://github.com/EllieOllie">
+          ©&nbsp;ElliOllie&nbsp;2022
+        </a>
       </div>
     </footer>
-  </div>
-<script src="script.js"></script>
-<script src="https://kit.fontawesome.com/b732306b1e.js" crossorigin="anonymous"></script>
-</body>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b732306b1e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
